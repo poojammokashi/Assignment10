@@ -1,0 +1,40 @@
+Explore all the ways of writting CSS?
+==>Inline CSS
+==>External CSS
+==>Installing the Framework
+==>SCSS
+
+How do we configure Tailwind?
+==>By using CDN Link
+     <script src="https://cdn.tailwindcss.com"></script>
+==>By installing it with the help of parcel
+** npm install -D tailwindcss postcss
+** npx tailwindcss init  [an auto-generated tailwindConfig.CSS is created]
+** Create a .postcssrc file add below lines
+        {
+  "plugins": {
+    "tailwindcss": {}
+  }
+}
+
+In tailwind.config.js file.below lines are seen
+      /** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{html,js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+** Lastly, index.css add  the   below  lines
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+In tailwind.config.css what does  all the key mean  content, theme,  extend  and  plugins?
+==>content: tells us the tyye of file extension in project
