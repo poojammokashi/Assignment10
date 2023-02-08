@@ -4,6 +4,8 @@ Explore all the ways of writting CSS?
 ==>Installing the Framework
 ==>SCSS
 
+
+
 How do we configure Tailwind?
 ==>By using CDN Link
      <script src="https://cdn.tailwindcss.com"></script>
@@ -38,3 +40,10 @@ module.exports = {
 
 In tailwind.config.css what does  all the key mean  content, theme,  extend  and  plugins?
 ==>content: tells us the tyye of file extension in project
+==>theme:  define your project’s color palette, type scale, fonts, breakpoints, border radius values, and more[responsiveness]
+==>extend: to add additional larger breakpoint is using "extend" [to override screen size]
+==>plugins: Plugins let you register new styles for Tailwind to inject into the user’s stylesheet using JavaScript instead of CSS
+
+
+Why do we have .postcssrc file?
+==>enable the tailwindcss plugin
